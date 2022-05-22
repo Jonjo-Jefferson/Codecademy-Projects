@@ -5,6 +5,7 @@ body {
 }
 
 .grid {
+  display: grid;
 }
 
 header {
