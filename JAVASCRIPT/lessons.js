@@ -139,7 +139,7 @@ const doPlantNeedsWater = function (day) {
   }
 };
 
-console.log(doplantNeedsWater('Tuesday'));
+console.log(doPlantNeedsWater('Tuesday'));
 
 // Arrow Functions
 
