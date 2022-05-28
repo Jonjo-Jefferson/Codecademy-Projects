@@ -1,4 +1,4 @@
-// Set my age = name
+// Set my agee = name
 let myAge = 34;
 const myName = 'Jonjo Jefferson'.toLowerCase();
 // Set early dog years
