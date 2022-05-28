@@ -34,6 +34,8 @@ favoritePhrase === 'Love That!'
 
 /////////////////
 
+// Else if
+
 let season = 'spring';
 
 if (season === 'spring') {
@@ -49,6 +51,8 @@ if (season === 'spring') {
 }
 
 /////////////////
+
+// Switch Statement
 
 let athleteFinalPosition = 'first place';
 
@@ -127,7 +131,7 @@ console.log(totalCost);
 
 // Function Expressions
 
-const plantNeedsWater = function (day) {
+const doPlantNeedsWater = function (day) {
   if (day === 'Wednesday') {
     return true;
   } else {
@@ -135,6 +139,18 @@ const plantNeedsWater = function (day) {
   }
 };
 
-console.log(plantNeedsWater('Tuesday'));
+console.log(doplantNeedsWater('Tuesday'));
 
 // Arrow Functions
+
+const arrowPlantNeedsWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+// Concise Body Arrow Functions
+
+const plantNeedsWater = (day) => (day === 'Wednesday' ? true : false);
