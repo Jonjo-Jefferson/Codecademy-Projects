@@ -6,9 +6,7 @@ if (isLocked) {
   console.log('You will not need a key to open the door.');
 }
 
-isLocked
-  ? console.log('You will need a key to open the door.')
-  : console.log('You will not need a key to open the door.');
+isLocked ? console.log('You will need a key to open the door.') : console.log('You will not need a key to open the door.');
 
 let isCorrect = true;
 
@@ -28,9 +26,7 @@ if (favoritePhrase === 'Love That!') {
   console.log("I don't love that!");
 }
 
-favoritePhrase === 'Love That!'
-  ? console.log('I love that!')
-  : console.log("I don't love that!");
+favoritePhrase === 'Love That!' ? console.log('I love that!') : console.log("I don't love that!");
 
 /////////////////
 
@@ -92,9 +88,7 @@ sayThanks();
 // Parameters and Arguments
 
 function sayThanks(name) {
-  console.log(
-    'Thank you for your purchase ' + name + '! We appreciate your business.'
-  );
+  console.log('Thank you for your purchase ' + name + '! We appreciate your business.');
 }
 
 sayThanks('Cole');
@@ -154,3 +148,41 @@ const arrowPlantNeedsWater = (day) => {
 // Concise Body Arrow Functions
 
 const plantNeedsWater = (day) => (day === 'Wednesday' ? true : false);
+
+// Scope
+
+const city = 'New York City';
+
+const logCitySkyline = () => {
+  let skyscraper = 'Empire State Building';
+  return 'The stars over the ' + skyscraper + ' in ' + city;
+};
+
+// console.log(logCitySkyline());
+
+// Global Scope
+
+const satellite = 'The Moon';
+const galaxy = 'The Milky Way';
+const stars = 'North Star';
+
+const callMyNightSky = () => {
+  return 'Night Sky: ' + satellite + ', ' + stars + ', and ' + galaxy;
+};
+
+console.log(callMyNightSky());
+
+// Block Scope
+
+const logVisibleLightWaves = () => {
+  let lightWaves = 'Moonlight';
+  let region = 'The Arctic';
+  // Add if statement here:
+  if (region === 'The Arctic') {
+    let lightWaves = 'Northern Lights';
+    console.log(lightWaves);
+  }
+  console.log(lightWaves);
+};
+
+logVisibleLightWaves();
