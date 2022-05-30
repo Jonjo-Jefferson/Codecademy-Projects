@@ -212,3 +212,21 @@ console.log(whatRelation(34));
 
 console.log(whatRelation(3));
 // Should print 'You are likely 2nd cousins.'
+
+// ! Tip Calculator
+
+const tipCalculator = (quality, mealTotal) => {
+  if (quality === 'excellent') {
+    return mealTotal * 0.3;
+  } else if (quality === 'good') {
+    return mealTotal * 0.2;
+  } else if (quality === 'ok') {
+    return mealTotal * 0.15;
+  } else if (quality === 'bad') {
+    return mealTotal * 0.05;
+  } else {
+    return mealTotal * 0.18;
+  }
+};
+
+console.log(tipCalculator('excellent', 1100)); //should return 20
