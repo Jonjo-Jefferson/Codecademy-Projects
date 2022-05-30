@@ -116,3 +116,14 @@ const truthyOrFalsy = (value) => {
   }
 };
 console.log(truthyOrFalsy(0));
+
+// ! Num of imaginary friends
+
+// ?v1
+const numImaginaryFriends = (friends) => {
+  calculateFriends = Math.ceil(friends / 4);
+  return calculateFriends;
+};
+
+// ?v2
+const numImaginaryShort = (friends) => Math.ceil(friends / 4);
