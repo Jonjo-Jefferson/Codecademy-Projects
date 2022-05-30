@@ -1,7 +1,10 @@
+// ! Hello World
+
 const greetWorld = () => {
   return 'Hello, World!';
 };
 
+// ! Can I vote
 const canIVote = (voterAge) => {
   if (voterAge >= 18) {
     return true;
@@ -9,7 +12,7 @@ const canIVote = (voterAge) => {
     return false;
   }
 };
-
+// ! Agree or Disagree
 const agreeOrDisagree = (string1, string2) => {
   if (string1 === string2) {
     return 'You agree!';
@@ -17,7 +20,7 @@ const agreeOrDisagree = (string1, string2) => {
     return 'You disagree!';
   }
 };
-
+// ! Life Phase
 const lifePhase = (age) => {
   if (age >= 0 && age <= 3) {
     return 'baby';
@@ -33,7 +36,7 @@ const lifePhase = (age) => {
     return 'This is not a valid age';
   }
 };
-
+// ! Final Grade
 const finalGrade = (grade1, grade2, grade3) => {
   const averageGrade = (grade1 + grade2 + grade3) / 3;
 
@@ -56,10 +59,22 @@ const finalGrade = (grade1, grade2, grade3) => {
 
 console.log(finalGrade(12, 43, 24));
 
+// !Reporting for Duty
 const reportingForDuty = (rank, lastName) => {
   return `${rank} ${lastName} reporting for duty!`;
 };
 console.log(reportingForDuty('Private', 'Fido'));
+
+// ! Fix broken code
+
+// const rollTheDice = () => {
+// 	// Math.random() gives us a random number from 0 up to, but not including, 1
+// 	// We multiplied that by 6 to get a number between 0 and up to, but not including, 6
+// 	// But since we actually wanted numbers from 1 to 6, inclusive, we added 1
+// 	  let die1 = Math.random() * 6 + 1
+// 	  let die2 = Math.random() * 6 + 1
+// 	  return die1 + die2
+//   }
 
 const rollTheDice = () => {
   // Math.random() gives us a random number from 0 up to, but not including, 1
@@ -72,6 +87,7 @@ const rollTheDice = () => {
 
 console.log(rollTheDice());
 
+// ! Calculate Weight
 const calculateWeight = (earthWeight, planet) => {
   if (planet === 'Mercury') {
     return `Your weight on ${planet} will be ` + earthWeight * 0.378;
@@ -89,3 +105,14 @@ const calculateWeight = (earthWeight, planet) => {
 };
 
 console.log(calculateWeight(100, 'Jupiter'));
+
+// ! Truthy or Falsy
+
+const truthyOrFalsy = (value) => {
+  if (value) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(truthyOrFalsy(0));
