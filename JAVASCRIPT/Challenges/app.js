@@ -127,3 +127,10 @@ const numImaginaryFriends = (friends) => {
 
 // ?v2
 const numImaginaryShort = (friends) => Math.ceil(friends / 4);
+
+// ! Silly Sentence
+
+const sillySentence = (adj, verb, noun) => {
+  return `I am so ${adj} because I ${verb} coding! Time to write some more awesome ${noun}!`;
+};
+console.log(sillySentence('excited', 'love', 'functions'));
