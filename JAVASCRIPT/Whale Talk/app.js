@@ -1,14 +1,23 @@
 /* There are no consonants. Only vowels excluding “y”.
 The u‘s and e‘s are extra long, so we must double them in our program.*/
 
-let input = 'I want to translate this';
+let input = 'turpentine and turtles';
 const vowels = ['a', 'e', 'i', 'o', 'u'];
 let resultArray = [];
 
 for (let i = 0; i < input.length; i++) {
+  if (input[i] === 'e') {
+    resultArray.push(input[i]);
+  } else if (input[i] === 'u') {
+    resultArray.push(input[i]);
+  }
   for (let j = 0; j < vowels.length; j++) {
-    if (input === vowels) {
-      console.log(input[j]);
+    if (vowels[j] === input[i]) {
+      resultArray.push(input[i]);
     }
   }
 }
+
+let resultString = resultArray.join().toUpperCase();
+
+console.log(resultString);
