@@ -3,7 +3,7 @@ The u‘s and e‘s are extra long, so we must double them in our program.*/
 
 let input = 'turpentine and turtles';
 const vowels = ['a', 'e', 'i', 'o', 'u'];
-let resultArray = [];
+const resultArray = [];
 
 for (let i = 0; i < input.length; i++) {
   if (input[i] === 'e') {
@@ -18,6 +18,6 @@ for (let i = 0; i < input.length; i++) {
   }
 }
 
-let resultString = resultArray.join().toUpperCase();
+const resultString = resultArray.join().toUpperCase();
 
 console.log(resultString);
