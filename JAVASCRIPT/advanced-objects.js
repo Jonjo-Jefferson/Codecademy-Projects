@@ -84,7 +84,7 @@ const robotSetters = {
 };
 
 robotSetters.numOfSensors = 100;
-// console.log(robot.numOfSensors);
+console.log(robotSetters.numOfSensors);
 
 // !Factory Functions
 
