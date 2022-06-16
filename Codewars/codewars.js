@@ -19,3 +19,10 @@ function noSpace(x) {
 }
 
 noSpace('8 j 8   mBliB8g  imjB8B8  jl  B');
+
+// !Sum Arrays
+
+// Sum Numbers
+function sum(numbers) {
+  return numbers.reduce((a, b) => a + b);
+}
