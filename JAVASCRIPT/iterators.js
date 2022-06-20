@@ -1,4 +1,4 @@
-// ! The .forEach() method
+// !  The forEach() method executes a provided function once for each array element.
 
 const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
 
@@ -8,7 +8,9 @@ const printFruit = (item) => {
 
 fruits.forEach(printFruit);
 
-// ! The .map() method
+// ! The map() method creates a new array populated
+// ! with the results of calling a provided function
+// ! on every element in the calling array.
 const animalsMap = [
   'Hen',
   'elephant',
@@ -37,7 +39,8 @@ const smallNumbersMap = bigNumbersMap.map((number) => {
   return number / 100;
 });
 
-// ! The .filter() method
+// ! The filter() method creates a new array with all
+// !elements that pass the test implemented by the provided function.
 
 const randomNumbers = [375, 200, 3.14, 7, 13, 852];
 
@@ -49,7 +52,13 @@ const smallNumbers = randomNumbers.filter((small) => {
   }
 });
 
-const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+const favoriteWords = [
+  'nostalgia',
+  'hyperbole',
+  'fervent',
+  'esoteric',
+  'serene',
+];
 
 // Call .filter() on favoriteWords below
 console.log(smallNumbers);
@@ -62,7 +71,16 @@ console.log(longFavoriteWords);
 
 // ! The findIndex() method
 
-const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+const animals = [
+  'hippo',
+  'tiger',
+  'lion',
+  'seal',
+  'cheetah',
+  'monkey',
+  'salamander',
+  'elephant',
+];
 
 const foundAnimal = animals.findIndex((animal) => {
   return animal === 'elephant';

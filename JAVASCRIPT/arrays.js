@@ -36,13 +36,13 @@ console.log(condiments);
 utensils[3] = 'Spoon';
 console.log(utensils);
 
-// .length Property
+// !.length Property
 
 const objectives = ['Learn a new language', 'Read 52 books', 'Run a marathon'];
 
 console.log(objectives.length);
 
-// .push() method
+// !.push() method
 
 const choresPush = ['wash dishes', 'do laundry', 'take out trash'];
 console.log(choresPush);
@@ -50,7 +50,7 @@ console.log(choresPush);
 choresPush.push('gamer', 'sausage');
 console.log(choresPush);
 
-// .pop() method
+// !.pop() method
 
 const chores = [
   'wash dishes',
