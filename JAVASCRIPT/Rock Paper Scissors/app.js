@@ -1,7 +1,12 @@
 const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();
 
-  if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'cheat') {
+  if (
+    userInput === 'rock' ||
+    userInput === 'paper' ||
+    userInput === 'scissors' ||
+    userInput === 'cheat'
+  ) {
     return userInput;
   } else {
     console.log('Incorrect choice.');
@@ -63,7 +68,7 @@ const determineWinner = (userChoice, computerChoice) => {
 // console.log(determineWinner('paper', 'rock'));
 
 const playGame = () => {
-  const userChoice = getUserChoice('cheat');
+  const userChoice = getUserChoice('paper');
   const computerChoice = getComputerChoice();
   console.log('You chose: ' + userChoice);
   console.log('The computer chose: ' + computerChoice);
