@@ -39,19 +39,29 @@ const batch = [
 ];
 
 const validateCred = (arr) => {
+  let sum = 0;
+  console.log(`Original Card number - ${arr}`);
+  let lastElement = arr[arr.length - 1];
+  console.log(`Dropped element - ${lastElement}`);
   slicedCard = arr.slice(0, -1);
   reversedCard = slicedCard.reverse();
-  console.log('Original sliced card' + reversedCard);
-  let everyOther = [];
+  console.log('Original sliced + reversed card - ' + reversedCard);
   for (i = 0; i < reversedCard.length; i += 2) {
-    everyOther.push(reversedCard[i]);
-  }
-  console.log(`Every other digit ${everyOther}`);
-  multipledCard = everyOther.map((x) => x * 2);
-  console.log(`multiplied every other digit by 2 - ${multipledCard}`);
-  for (let i = 0; i < multipledCard.length; i++) {
-    if (multipledCard[i] > 9) {
+    reversedCard[i] *= 2;
+    if (reversedCard[i] > 9) {
+      reversedCard[i] -= 9;
     }
+  }
+  console.log(`multiplied every other digit by 2 then -9 > 9 - ${reversedCard}`);
+  for (const val of reversedCard) {
+    sum += val;
+  }
+  let finalCard = sum + lastElement;
+  console.log(`Will this have a remainder 0? - ${finalCard}`);
+  if (finalCard % 10 != 0) {
+    console.log('This card is invalid!');
+  } else {
+    console.log('This card is valid!');
   }
 };
 

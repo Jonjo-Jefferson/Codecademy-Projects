@@ -17,9 +17,7 @@ const aliens = ['Blorgous', 'Glamyx', 'Wegord', 'SpaceKing'];
 
 const greetAliens = (alien) => {
   for (let i = 0; i < alien.length; i++) {
-    console.log(
-      `Oh powerful ${alien[i]}, we humans offer our unconditional surrender!`
-    );
+    console.log(`Oh powerful ${alien[i]}, we humans offer our unconditional surrender!`);
   }
 };
 
@@ -66,11 +64,9 @@ const numbersPower = [5, 3, 9, 30];
 
 const smallestPowerOfTwo = (arr) => {
   let results = [];
-  // The 'outer' for loop - loops through each element in the array
   for (let i = 0; i < arr.length; i++) {
     number = arr[i];
     console.log(number);
-    // The 'inner' while loop - searches for smallest power of 2 greater than the given number
     j = 1;
     while (j < number) {
       j = j * 2;
