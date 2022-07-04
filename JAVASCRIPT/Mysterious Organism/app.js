@@ -12,3 +12,18 @@ const mockUpStrand = () => {
   }
   return newStrand;
 };
+
+const specimenTest = 'pAequor';
+
+function pAequorFactory(specimenNum, dna) {
+  return {
+    specimenNum,
+    dna,
+    mutate() {
+      return returnRandBase();
+    },
+  };
+}
+
+console.log(pAequorFactory(3, specimenTest).mutate());
+console.log(mockUpStrand());

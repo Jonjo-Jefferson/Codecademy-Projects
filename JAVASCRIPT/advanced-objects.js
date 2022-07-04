@@ -107,7 +107,7 @@ function robotFactory(model, mobile) {
     model,
     mobile,
     beep() {
-      console.log('Beep Boop');
+      console.log('Bee1212212p Boop');
     },
   };
 }
